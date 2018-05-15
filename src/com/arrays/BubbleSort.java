@@ -11,6 +11,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] data = new int[] {1,3,2,5,6,9,7,8,0,4};
         sort(data);
+        printArray(data);
     }
 
     public static void sort(int[] data) {
@@ -25,5 +26,13 @@ public class BubbleSort {
                 }
             }
         }
+    }
+
+    /* 定义一个数组输出方法 */
+    public static void printArray(int[] temp) {
+        for (int i = 0; i < temp.length; i++) {
+            System.out.print(temp[i] + ", ");
+        }
+        System.out.println();
     }
 }
